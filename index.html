@@ -86,23 +86,27 @@
       <h2 class="text-2xl font-bold tracking-tight text-blue-950 mb-4">Request Contractor Waitlist Priority</h2>
       <p class="text-sm text-zinc-600 mb-6">Secure priority placement for upcoming ANSI A117.1 plan reviews and risk-mitigation audits.</p>
       
+      <!-- FORM BACKEND: replace the mailto: action below with your Formspree endpoint
+           (https://formspree.io/f/YOUR_FORM_ID) to receive submissions at your personal
+           email without exposing the address in the page source. -->
       <form action="mailto:advisory@anthrospecadvisory.com" method="POST" class="space-y-4">
         <div>
           <label class="block mono-font text-[10px] uppercase tracking-wider text-zinc-500 mb-1">Contracting Firm Name</label>
-          <input type="text" required class="w-full border border-zinc-300 bg-zinc-50 px-3 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none" placeholder="e.g., Apex Residential Remodeling">
+          <input type="text" name="firm" required class="w-full border border-zinc-300 bg-zinc-50 px-3 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none" placeholder="e.g., Apex Residential Remodeling">
         </div>
         <div>
           <label class="block mono-font text-[10px] uppercase tracking-wider text-zinc-500 mb-1">Primary Contact Email</label>
-          <input type="email" required class="w-full border border-zinc-300 bg-zinc-50 px-3 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none" placeholder="director@apexremodel.com">
+          <input type="email" name="email" required class="w-full border border-zinc-300 bg-zinc-50 px-3 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none" placeholder="director@apexremodel.com">
         </div>
         <div>
           <label class="block mono-font text-[10px] uppercase tracking-wider text-zinc-500 mb-1">Estimated Monthly Build Volume (Projects)</label>
-          <select class="w-full border border-zinc-300 bg-zinc-50 px-3 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none">
+          <select name="volume" class="w-full border border-zinc-300 bg-zinc-50 px-3 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none">
             <option>1–3 Projects / Month</option>
             <option>4–8 Projects / Month</option>
             <option>9+ Projects / Month (Enterprise)</option>
           </select>
         </div>
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
         <button type="submit" class="w-full bg-blue-950 text-white mono-font text-xs uppercase tracking-widest py-3 hover:bg-orange-600 transition-colors duration-150 mt-2">
           Join Priority Waitlist
         </button>
@@ -114,7 +118,6 @@
   <footer class="bg-blue-950 text-zinc-400 py-12 px-6">
     <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start gap-6">
       <p class="text-sm">© 2026 AnthroSpec Advisory LLC <br class="md:hidden"><span class="text-xs text-zinc-500 mt-1 md:mt-0 md:ml-2">Clinical Direction: OTR/L, CDP, CAPS</span></p>
-      <a href="mailto:advisory@anthrospecadvisory.com" class="mono-font text-xs tracking-widest uppercase text-white hover:text-zinc-300 transition-all duration-75">advisory@anthrospecadvisory.com</a>
     </div>
   </footer>
 
