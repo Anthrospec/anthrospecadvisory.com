@@ -81,54 +81,69 @@
     </div>
   </div>
 
-  <!-- Service Tiers -->
-  <section id="tiers" class="max-w-5xl mx-auto py-24 px-6 border-b border-zinc-200 bg-zinc-50">
-    <p class="mono-font text-[10px] tracking-widest uppercase text-zinc-500 mb-4">// SERVICE TIERS</p>
-    <h2 class="brand-font text-3xl font-bold tracking-tighter mb-4">Audit Tiers</h2>
-    <p class="text-zinc-600 max-w-2xl mb-12">Select a tier below — your choice pre-fills the waitlist intake form.</p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-zinc-200 border border-zinc-200">
-
-      <div class="bg-zinc-50 border border-zinc-200 p-8 transition-all duration-150 hover:bg-white hover:border-orange-500">
-        <p class="mono-font text-[10px] tracking-widest uppercase text-zinc-500 mb-3">01 // STANDARD</p>
-        <h3 class="brand-font text-xl font-bold tracking-tighter text-blue-950 mb-3">Tier 1: Standard Audit</h3>
-        <p class="mb-4"><span class="text-4xl font-bold text-blue-950">$295</span></p>
-        <p class="text-sm text-zinc-600 mb-6">Baseline structural clearance verification and hazard identification for single-zone residential modifications.</p>
-        <div class="py-4 border-y border-zinc-200 my-4 space-y-1">
-          <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">INPUT:</span> 4-6 Site Photos + Form</p>
-          <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">OUTPUT:</span> ANSI A117.1 Clearance Spec</p>
-          <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-orange-600 font-bold">SLA:</span> 48-72 Hours</p>
-        </div>
-        <button type="button" onclick="document.getElementById('tier-select').value = 'Tier 1: Standard Audit'; document.getElementById('waitlist-form').scrollIntoView({behavior: 'smooth'});" class="bg-blue-950 text-white mono-font text-xs uppercase tracking-widest py-3 px-6 hover:bg-orange-500 hover:text-white transition-colors duration-150 w-full inline-block text-center cursor-pointer">INITIATE_AUDIT</button>
+    <!-- Service Tiers -->
+  <div class="max-w-5xl mx-auto px-6 py-20 relative">
+  <div class="absolute -top-1.5 -left-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
+  <div class="absolute -top-1.5 -right-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
+  <div class="absolute -bottom-1.5 -left-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
+  <div class="absolute -bottom-1.5 -right-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <!-- TIER 1 -->
+    <div class="bg-zinc-50 border border-zinc-200 p-8 flex flex-col transition-all duration-150 hover:bg-white hover:border-orange-500 relative group">
+      <h3 class="brand-font font-bold text-xl text-blue-950 mb-2">Standard Audit</h3>
+      <span class="text-4xl font-bold text-blue-950">$295</span>
+      <p class="text-sm text-zinc-600 my-4 h-16">Baseline structural clearance verification and hazard identification for single-zone residential modifications.</p>
+      
+      <div class="py-4 border-y border-zinc-200 my-4 space-y-1">
+        <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">INPUT:</span> 4-6 Site Photos + Form</p>
+        <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">OUTPUT:</span> ANSI A117.1 Clearance Spec</p>
+        <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-orange-600 font-bold">SLA:</span> 48 Hours</p>
       </div>
 
-      <div class="bg-zinc-50 border border-zinc-200 p-8 transition-all duration-150 hover:bg-white hover:border-orange-500">
-        <p class="mono-font text-[10px] tracking-widest uppercase text-zinc-500 mb-3">02 // COMPREHENSIVE</p>
-        <h3 class="brand-font text-xl font-bold tracking-tighter text-blue-950 mb-3">Tier 2: Comprehensive</h3>
-        <p class="mb-4"><span class="text-4xl font-bold text-blue-950">$495</span></p>
-        <p class="text-sm text-zinc-600 mb-6">Advanced risk modeling integrating clinical WeHSA matrices for complex, multi-zone aging-in-place remodels.</p>
-        <div class="py-4 border-y border-zinc-200 my-4 space-y-1">
-          <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">INPUT:</span> 4-6 Site Photos + Form</p>
-          <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">OUTPUT:</span> ANSI Spec + WeHSA Risk Matrix</p>
-          <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-orange-600 font-bold">SLA:</span> 48-72 Hours</p>
-        </div>
-        <button type="button" onclick="document.getElementById('tier-select').value = 'Tier 2: Comprehensive'; document.getElementById('waitlist-form').scrollIntoView({behavior: 'smooth'});" class="bg-blue-950 text-white mono-font text-xs uppercase tracking-widest py-3 px-6 hover:bg-orange-500 hover:text-white transition-colors duration-150 w-full inline-block text-center cursor-pointer">INITIATE_AUDIT</button>
-      </div>
-
-      <div class="bg-zinc-50 border border-zinc-200 p-8 transition-all duration-150 hover:bg-white hover:border-orange-500">
-        <p class="mono-font text-[10px] tracking-widest uppercase text-zinc-500 mb-3">03 // ENTERPRISE</p>
-        <h3 class="brand-font text-xl font-bold tracking-tighter text-blue-950 mb-3">Tier 3: Enterprise</h3>
-        <p class="mb-4"><span class="text-4xl font-bold text-blue-950">$895</span></p>
-        <p class="text-sm text-zinc-600 mb-6">Full-scope CASPAR environmental audits with architectural CAD redline integration for high-volume regional builders.</p>
-        <div class="py-4 border-y border-zinc-200 my-4 space-y-1">
-          <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">INPUT:</span> 4-6 Site Photos + Form</p>
-          <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">OUTPUT:</span> Full CASPAR Protocol + CAD Notes</p>
-          <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-orange-600 font-bold">SLA:</span> 48-72 Hours</p>
-        </div>
-        <button type="button" onclick="document.getElementById('tier-select').value = 'Tier 3: Enterprise'; document.getElementById('waitlist-form').scrollIntoView({behavior: 'smooth'});" class="bg-blue-950 text-white mono-font text-xs uppercase tracking-widest py-3 px-6 hover:bg-orange-500 hover:text-white transition-colors duration-150 w-full inline-block text-center cursor-pointer">INITIATE_AUDIT</button>
-      </div>
-
+      <button onclick="document.getElementById('tier-select').value = 'Tier 1: Standard Audit'; document.getElementById('waitlist-form').scrollIntoView({behavior: 'smooth'});" class="w-full bg-blue-950 text-white mono-font text-xs uppercase tracking-widest py-3 hover:bg-orange-500 hover:text-white transition-colors duration-150 mt-auto cursor-pointer">
+        INITIATE AUDIT
+      </button>
     </div>
-  </section>
+
+    <!-- TIER 2 -->
+    <div class="bg-zinc-50 border border-zinc-200 p-8 flex flex-col transition-all duration-150 hover:bg-white hover:border-orange-500 relative group">
+      <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-orange-600 text-white px-3 py-1 mono-font text-[10px] tracking-widest uppercase whitespace-nowrap">Recommended</div>
+      <h3 class="brand-font font-bold text-xl text-blue-950 mb-2">Comprehensive</h3>
+      <span class="text-4xl font-bold text-blue-950">$495</span>
+      <p class="text-sm text-zinc-600 my-4 h-16">Advanced risk modeling integrating clinical WeHSA matrices for complex, multi-zone aging-in-place remodels.</p>
+      
+      <div class="py-4 border-y border-zinc-200 my-4 space-y-1">
+        <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">INPUT:</span> 8-10 Photos + Scope Form</p>
+        <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">OUTPUT:</span> ANSI Spec + WeHSA Matrix</p>
+        <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-orange-600 font-bold">SLA:</span> 48-72 Hours</p>
+      </div>
+
+      <button onclick="document.getElementById('tier-select').value = 'Tier 2: Comprehensive'; document.getElementById('waitlist-form').scrollIntoView({behavior: 'smooth'});" class="w-full bg-blue-950 text-white mono-font text-xs uppercase tracking-widest py-3 hover:bg-orange-500 hover:text-white transition-colors duration-150 mt-auto cursor-pointer">
+        INITIATE AUDIT
+      </button>
+    </div>
+
+    <!-- TIER 3 -->
+    <div class="bg-zinc-50 border border-zinc-200 p-8 flex flex-col transition-all duration-150 hover:bg-white hover:border-orange-500 relative group">
+      <h3 class="brand-font font-bold text-xl text-blue-950 mb-2">Enterprise</h3>
+      <span class="text-4xl font-bold text-blue-950">$895</span>
+      <p class="text-sm text-zinc-600 my-4 h-16">Full-scope CASPAR environmental audits with architectural CAD redline integration for high-volume builders.</p>
+      
+      <div class="py-4 border-y border-zinc-200 my-4 space-y-1">
+        <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">INPUT:</span> Full Site Plans + Video</p>
+        <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">OUTPUT:</span> CASPAR Protocol + CAD Notes</p>
+        <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-orange-600 font-bold">SLA:</span> 72-96 Hours</p>
+      </div>
+
+      <button onclick="document.getElementById('tier-select').value = 'Tier 3: Enterprise'; document.getElementById('waitlist-form').scrollIntoView({behavior: 'smooth'});" class="w-full bg-blue-950 text-white mono-font text-xs uppercase tracking-widest py-3 hover:bg-orange-500 hover:text-white transition-colors duration-150 mt-auto cursor-pointer">
+        INITIATE AUDIT
+      </button>
+    </div>
+
+  </div>
+</div>
 
   <!-- Waitlist Intake -->
   <div id="waitlist-form" class="max-w-xl mx-auto px-6 py-16">
