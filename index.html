@@ -162,10 +162,8 @@
       <h2 class="text-2xl font-bold tracking-tight text-blue-950 mb-4">Request Contractor Waitlist Priority</h2>
       <p class="text-sm text-zinc-600 mb-6">Secure priority placement for upcoming ANSI A117.1 plan reviews and risk-mitigation audits.</p>
       
-      <!-- FORM BACKEND: replace the mailto: action below with your Formspree endpoint
-           (https://formspree.io/f/YOUR_FORM_ID) to receive submissions at your personal
-           email without exposing the address in the page source. -->
-      <form action="mailto:intake@anthrospecadvisory.com" method="POST" class="space-y-4">
+      <!-- FORM BACKEND: submissions post to Formspree ("Waitlist Intake") and forward to intake@anthrospecadvisory.com -->
+      <form action="https://formspree.io/f/xkjgldlb" method="POST" class="space-y-4">
         <div>
           <label class="block mono-font text-[10px] uppercase tracking-wider text-zinc-500 mb-1">Contracting Firm Name</label>
           <input type="text" name="firm" required class="w-full border border-zinc-300 bg-zinc-50 px-3 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none" placeholder="e.g., Apex Residential Remodeling">
